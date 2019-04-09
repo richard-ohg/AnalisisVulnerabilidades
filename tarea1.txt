@@ -1,0 +1,12 @@
+* Significado de la R en los registros de propósito general de 64 bits(*)
+
+R -> registers
+
+
+* Tipos de datos y su tamaño:
+
+En el 8086/88 se definen los siguientes tamaños de datos:
+4 bits -> nibble
+8 bits -> byte
+16 bits -> word
+32 bits -> dword 
