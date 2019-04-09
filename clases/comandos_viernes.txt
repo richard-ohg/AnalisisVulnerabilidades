@@ -1,0 +1,27 @@
+sudo pip3 install z3 z3-solver
+strings aio_elf/aio_elf
+upx -d aio_elf -o aio_elf_upx
+sudo upx -d aio_elf -o aio_elf_upx
+file aio_elf
+file aio_elf_upx
+strings aio_elf_upx
+strings aio_elf | grep -i upx
+file aio_elf_upx
+strings aio_elf_upx | less
+strip -o aio_elf_upx_stripped aio_elf_upx
+file aio_elf_upx_stripped
+strings -a aio_elf_upx | tee str_aio_elf_upx
+cat -n str_aio_elf_upx | less
+nm aio_elf_upx
+nm aio_elf_upx | grep T
+nm aio_elf_upx | grep ".............T"
+nm aio_elf_upx | grep ".......... T"
+nm aio_elf_upx | grep "....... T"
+nm aio_elf_upx | grep ".... T"
+gcc allinone.c -o allione -lpthread
+ldd allione
+readelf --file-header aio_elf
+readelf --section-header aio_elf_upx | less
+readelf --hex-dump=14 aio_elf_upx | less
+readelf --hex-dump=14 allione | less
+radare2 aio_elf_upx
