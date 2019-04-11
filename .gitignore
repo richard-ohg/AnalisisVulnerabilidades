@@ -1,0 +1,11 @@
+# ignoramos todo
+*
+
+# permitimos
+!.gitignore
+!README.md
+!*.c
+!*.asm
+!*.txt
+!*.sh
+!*.py
