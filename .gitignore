@@ -1,6 +1,5 @@
 # ignoramos todo
 *
-clases/*
 
 # permitimos
 !.gitignore
