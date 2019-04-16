@@ -45,7 +45,7 @@ sin la e solo tienen 16 bits, y cada uno tiene parte baja y alta (h y l)
 
 .text
 .data
-.ro data
+.bss
 
 =============================== dia 2 ===============================
 
