@@ -17,19 +17,22 @@ show_options(){
 # Función para imprimir con formato \u9090\u9090
 unicode(){
   echo -e "código en unicode: $BINARIO\n"
-  # objdump -d -j .text $BINARIO | grep -e '^ ' | tr '[[:space:]]' '\n' | egrep '^[[:alnum:]]{2}$' | xargs | sed 's/ /\\x/g' | sed -e 's/^/\\x/g'
+  echo -n "--->  "
+  objdump -d -j .text $BINARIO | grep -e '^ ' | tr '[[:space:]]' '\n' | egrep '^[[:alnum:]]{2}$' | xargs | sed 's/ //g' | rev | sed -E 's/(....)/\1\\u/g' | rev | sed -e 's/u\\/\\u/g' | sed -e 's/^/\\u/'
 }
 
 # Función para imprimir con formato 9090
 numeric(){
   echo -e "código en numerico: $BINARIO\n"
-  echo "--->" `objdump -d -j .text $BINARIO | grep -e '^ ' | tr '[[:space:]]' '\n' | egrep '^[[:alnum:]]{2}$' | xargs | sed 's/ //g' | sed -e 's/^//g'`
+  echo -n "--->  "  
+  objdump -d -j .text $BINARIO | grep -e '^ ' | tr '[[:space:]]' '\n' | egrep '^[[:alnum:]]{2}$' | xargs | sed 's/ //g' | sed -e 's/^//g'
 }
 
 # Función para imprimir con formato \x90\x90
 hexadecimal(){
   echo -e "código en hexadecimal: $BINARIO\n"
-  echo "--->" `objdump -d -j .text $BINARIO | grep -e '^ ' | tr '[[:space:]]' '\n' | egrep '^[[:alnum:]]{2}$' | xargs | sed 's/ /\\x/g' | sed -e 's/^/\\x/g'`
+  echo -n "---> " 
+  objdump -d -j .text $BINARIO | grep -e '^ ' | tr '[[:space:]]' '\n' | egrep '^[[:alnum:]]{2}$' | xargs | sed 's/ /\\x/g' | sed -e 's/^/\\x/g'
 }
 
 # Función para mandar a la función dependiendo de la opción
