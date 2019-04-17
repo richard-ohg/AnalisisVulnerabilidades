@@ -147,7 +147,7 @@ CC = gcc -fno-stack-protector -D_FORTIFY_SOURCE=0 -z norelro -z execstack
 
 
 
-ret2libc -> WAX 
+************* return to libc -> WAX 
 
 https://pastebin.com/bFHeMEXv -> ejemplo
 gcc ret2libc.c -m32 -fno-stack-protector -mpreferred-stack-boundary=2 -> lo compilamos así
